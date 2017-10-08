@@ -13085,23 +13085,26 @@ Naive Predictor: [Accuracy score: 0.2478, F-score: 0.2917]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Decision Trees:
-              .Weather to approve a credit card to an applicant
-              .They easily handle feature interactions and they’re non-parametric, so you don’t have to worry about outliers or whether the data is linearly separable; each to interpret. 
-              .Overfitting
-              .not too many features in the data</p>
+<p><strong>Answer: </strong></p>
 
-<pre><code>          logistic regression
+<pre><code>          * Decision Trees:
+          . Weather to approve a credit card to an applicant
+          . They easily handle feature interactions and they’re non-parametric, so you don’t have to worry about outliers or whether the data is linearly separable; each to interpret. 
+          . Overfitting
+          . labeled data, sample size &lt;100k, predicting category
+
+          * logistic regression
           . predict the probability of account default
-          .Logistic regression does not make many of the key assumptions of linear regression and general linear     models that are based on ordinary least squares algorithms – particularly regarding linearity, normality, homoscedasticity, and measurement level (statisticssolution.com)
-          .independent variables should be independent from each other.
-          .dependent variable is binary 
+          . Logistic regression does not make many of the key assumptions of linear regression and general 
+          linear models that are based on ordinary least squares algorithms – particularly regarding linearity, normality, homoscedasticity, and measurement level (statisticssolution.com)
+          . independent variables should be independent from each other.
+          . labeled data, sample size &lt;100k, predicting category
 
-          Ensember method
-          .predict taxi tip amount for a passenger
-          .avoid overfitting; 
-          .Increased computation, Increased storage,Decreased comprehensibility (wikipedia.org)
-          .it's a classification model</code></pre>
+          * Ensember method (random forest)
+          . predict taxi tip amount for a passenger
+          . avoid overfitting; 
+          . Increased computation, Increased storage,Decreased comprehensibility (wikipedia.org)
+          . labeled data, sample size &lt;100k, predicting category</code></pre>
 
 </div>
 </div>
@@ -14084,7 +14087,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> when 100% of the training data is used, randomforest has longest prediction and traning time, logisticregression requires the least time. F_score and accuracy are equally good for random forest and decisiontree.</p>
 <p>on the 100% testing data, random forest and logisticregression are the best.</p>
-<p>Even though random forest has longest running time, however it only takes more seconds, and it's performance is good in both training and testing data, so i would pick random forest to build the model.</p>
+<p>Even though random forest has longest running time, however it only takes more seconds, and it's performance is good in both training and testing data. Also this results are before tunning process. Random forest has wide range of hyperparameters which gives the potential of even better performance after tunning.</p>
 
 </div>
 </div>
